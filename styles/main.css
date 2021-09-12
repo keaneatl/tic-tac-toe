@@ -1,13 +1,57 @@
 /* variables */
 :root{
-    --primary: #d8dad9;
+    --primary: #F4F1F8;
     --secondary: #ffffff;
     --tertiary: #000000;
 }
 
 /* base styles */
+html{
+    font-size: 16px;
+}
 
+body{
+    background-color: var(--primary);
+}
 /* fonts */
+
+/* mobile styles */
+#header{
+    height: 5rem;
+    width: 85%;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius : 0 0 10px 10px;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 5rem;
+    border: 1px solid black;
+    min-height: 20rem;
+    width: 13rem;
+}
+
+.game-box{
+    border: 1px solid black;
+    background-color: var(--secondary);
+}
+
+.footer{
+    bottom: 0;
+    position: fixed;
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px){

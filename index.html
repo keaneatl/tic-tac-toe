@@ -8,26 +8,30 @@
     <link rel="icon" href="images/os-x-svgrepo-com.svg">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/reset.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1 class="heading">Tic Tac Toe</h1>
-    </header>
 
-    <div id="game-container">
-        <div class="game-box"></div>
-        <div class="game-box"></div>
-        <div class="game-box"></div>
+    <div id="main-container">
+        <header id="header">
+            <h1 class="heading">Tic Tac Toe</h1>
+        </header>
 
-        <div class="game-box"></div>
-        <div class="game-box"></div>
-        <div class="game-box"></div>
+        <div id="game-container">
+            <div class="game-box" data-index="0"></div>
+            <div class="game-box" data-index="1"></div>
+            <div class="game-box" data-index="2"></div>
 
-        <div class="game-box"></div>
-        <div class="game-box"></div>
-        <div class="game-box"></div>
-    </div>
+            <div class="game-box" data-index="3"></div>
+            <div class="game-box" data-index="4"></div>
+            <div class="game-box" data-index="5"></div>
+
+            <div class="game-box" data-index="6"></div>
+            <div class="game-box" data-index="7"></div>
+            <div class="game-box" data-index="8"></div>
+        </div>
     
-    <p>Made by Keane Andre</p>
+        <p class="footer">Made by Keane Andre</p>
+    </div>
 </body>
 </html>
