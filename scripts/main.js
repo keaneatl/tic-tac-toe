@@ -8,15 +8,14 @@ const gameBoard = (() => {
     let gameBoard = [];
     let player = player1.name;
     
-    
-    //cache DOM
+    // cache DOM
     const gameBoxes = Array.from(document.querySelectorAll('.game-box'));
     const resetButton = document.querySelector('#reset');
     const firstRow = gameBoxes.filter(box => gameBoxes.indexOf(box) <= 2)
     const secondRow = gameBoxes.filter(box => gameBoxes.indexOf(box) >= 3 && gameBoxes.indexOf(box) <= 5);
     const thirdRow = gameBoxes.filter(box => gameBoxes.indexOf(box) >= 6 && gameBoxes.indexOf(box) <= 8);
 
-    //bind events
+    // bind events
     gameBoxes.forEach(box => box.addEventListener('click', markSpot));
     gameBoxes.forEach(box => box.addEventListener('click', _gameOver));
     resetButton.addEventListener('click', () => {
@@ -27,8 +26,8 @@ const gameBoard = (() => {
     })
     
     function _render(){
-        gameBoxes.forEach((box) => {
-         (box.textContent === "") ? box.textContent = gameBoard[gameBoxes.indexOf(box)] : box.textContent === "";
+        gameBoxes.forEach((box, i) => {
+         (box.textContent === "") ? box.textContent = gameBoard[i] : box.textContent === "";
         })
     }
 
@@ -86,7 +85,6 @@ const gameBoard = (() => {
         _changeTurn();
         _render();
     }
-    return { markSpot, player1, player2, gameBoard }
 })();
 
 
