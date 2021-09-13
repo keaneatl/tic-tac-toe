@@ -35,10 +35,11 @@
 1. Factory Functions
 2. Object Literal Design Pattern
 3. Modular Design Pattern
+4. Revealing Modular Design Pattern
 
-### Areas of improvement
-1. JavaScript code could possibily be cleaner/more efficient
-2. Possible memory leaks
+### Area/s of improvement
+1. JavaScript modules can be broken up to smaller modules
+
 
 ## Disclaimer
 The resources I used, specifically the custom fonts installed, backgrounds, pictures, and the svg icons are only utilized for personal use, and not otherwise. 
