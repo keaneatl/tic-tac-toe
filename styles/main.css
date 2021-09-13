@@ -29,7 +29,8 @@ body{
 }
 
 .links{
-    font-size: 0.8rem;
+    margin-left: 1rem;
+    font-size: 0.85rem;
     color: inherit
 }
 
@@ -85,7 +86,7 @@ body{
     
     #header{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
     
@@ -94,13 +95,5 @@ body{
     } 
 }
 
-/* large tablet styles */
-@media screen and (min-width: 820px){
 
-}
-
-/* desktop styles */
-@media screen and (min-width: 1020px){
-
-}
 
